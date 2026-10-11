@@ -28,13 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
+            formsPlot1 = new ScottPlot.WinForms.FormsPlot();
             SuspendLayout();
+            // 
+            // formsPlot1
+            // 
+            formsPlot1.Location = new Point(12, 12);
+            formsPlot1.Name = "formsPlot1";
+            formsPlot1.Size = new Size(1481, 877);
+            formsPlot1.TabIndex = 0;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1586, 901);
+            Controls.Add(formsPlot1);
             Name = "Form1";
             Text = "Form1";
             Load += Form1_Load;
@@ -42,5 +51,7 @@
         }
 
         #endregion
+
+        private ScottPlot.WinForms.FormsPlot formsPlot1;
     }
 }
